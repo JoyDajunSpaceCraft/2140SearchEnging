@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-import app01.views
+import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("search/", app01.views.search, name="search"),
-    path("getdoc/", app01.views.getdoc, name="getdoc"),
+    path("search/", views.search, name="search"),
+    path("getdoc/", views.getdoc, name="getdoc"),
 ]
